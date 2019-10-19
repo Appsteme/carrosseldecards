@@ -16,5 +16,7 @@ As imagens utilizadas para compor o carrossel de itens ficam armazenadas na past
 
 Os arquivos referentes às linguagens utilizadas ficam armazenados nas pastas respectivas.
 
+Link do modelo em funcionamento : https://www.appsteme.com.br/2020/portifolio/carrossel/
+
 
 
