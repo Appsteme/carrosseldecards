@@ -16,7 +16,32 @@ As imagens utilizadas para compor o carrossel de itens ficam armazenadas na past
 
 Os arquivos referentes às linguagens utilizadas ficam armazenados nas pastas respectivas.
 
-Link do modelo em funcionamento : https://www.appsteme.com.br/2020/portifolio/carrossel/
+Os dados que são parte da composição dos itens do carrossel devem ser repassados em formatação json conforme exemplo : 
+
+JSON - ARRAY DE CARDS
+
+      cards = {
+        "id": [
+          1,
+          2,
+          3
+          ],
+        "titulo": [
+          "Card 1",
+          "Card 2",
+          "Card 3"
+          ],
+        "texto": [
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        ],
+        "link": [
+          1,
+          2,
+          3
+        ]
+      };
 
 
 
