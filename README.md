@@ -2,10 +2,7 @@
 
 Carrossel de 3 Cards
 
-Desenvolvedor : Marcelo Tosta - App e Web Developer 
-Empresa : Appsteme.com.br
-Link : https://www.appsteme.com.br
-Contato : marcelotosta@appsteme.com.br
+Desenvolvedor : Marcelo Tosta - App e Web Developer (Appsteme.com.br)
 
 Descrição do Projeto
 
