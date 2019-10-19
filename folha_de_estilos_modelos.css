@@ -1,0 +1,597 @@
+/* ---------------------------  COMPONENTES IMPORTADOS - INÍCIO ----------------------------- */
+
+
+
+/* ---------------------------  COMPONENTES IMPORTADOS - FIM -------------------------------- */
+/* -----------------------------  PARÂMETROS PADRÕES - INÍCIO  ------------------------------ */
+body{
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #232323;
+}
+/* -----------------------------  PARÂMETROS PADRÕES - FIM -------------------------------- */
+/* --------------------------------  TIPOLOGIA - INÍCIO ----------------------------------- */
+
+
+
+/* --------------------------------  TIPOLOGIA - FIM ----------------------------------- */
+/* -------------------------------  CARROSSEL - INÍCIO --------------------------------- */
+.conteiner_geral_de_cards{
+  margin-bottom:0.5rem;
+ }
+ .conteiner_interno_cards{
+  margin-left:-10rem;
+  margin-right:-10rem;
+  background-repeat: no-repeat;
+  -webkit-background-repeat: no-repeat;
+  -moz-background-repeat: no-repeat;
+  background-size:cover;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  background-position:center;
+  -webkit-background-position:center;
+  -moz-background-position:center;
+}
+.card_padrao{
+  display:inline-block;
+  background-repeat: no-repeat;
+  -webkit-background-repeat: no-repeat;
+  -moz-background-repeat: no-repeat;
+  background-size:cover;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  background-position:center;
+  -webkit-background-position:center;
+  -moz-background-position:center;
+  margin-top: 5rem;
+  margin-bottom: 5.2rem;
+  border: 0rem;
+  border-radius: 0.4rem;
+  box-shadow: 0.1rem 0.5rem 1.6rem rgba(0,0,0,0.8);
+}
+.titulo_card_carrossel{
+  color:#FFF;
+  padding: 0.05rem;
+  background-color: rgba(0,0,0,0.5);
+}
+.conteudo_card_carrossel{
+  color:#FFF;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  background-color: rgba(0,0,0,0.5);
+}
+.imagem_card{
+  width: 100%;
+  height: auto;
+  margin-top: -0.02rem;
+  border-radius: 0.8rem;
+}
+.seta_esquerda, .seta_direita{
+  color:rgba(255,255,255,0.8);
+  text-shadow: 0.03rem 0.04rem 0.05rem rgba(0,0,0,0.8);
+}
+.conteiner_principal_modal{
+  background-color:rgba(0,0,0,0.2);
+  box-shadow: 0.1rem 0.5rem 1.6rem rgba(0,0,0,0.8);
+}
+.titulo_modal{
+  float:left;
+  font-weight: bold;
+  color:#FFF;
+}
+.foto_modal{
+  width: 100%;
+  display:inline-block;
+  background-repeat: no-repeat;
+  -webkit-background-repeat: no-repeat;
+  -moz-background-repeat: no-repeat;
+  background-size:cover;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  background-position:center;
+  -webkit-background-position:center;
+  -moz-background-position:center;
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+  border: 0rem;
+  border-radius: 0.4rem;
+  box-shadow: 0.1rem 0.5rem 1.6rem rgba(0,0,0,0.8);
+}
+.texto_modal{
+  color:#FFF;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 0.4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+@keyframes redimensionaBotaoCarrinho {
+  0%   {background-color:rgba(255,255,255,0.4); width:100%;}
+  100% {background-color:rgba(255,255,255,0.6); width: 30%;}
+}
+@-webkit-keyframes redimensionaBotaoCarrinho {
+  0%   {background-color:rgba(255,255,255,0.4); width:100%;}
+  100% {background-color:rgba(255,255,255,0.6); width: 30%;}
+}
+@-moz-keyframes redimensionaBotaoCarrinho {
+  0%   {background-color:rgba(255,255,255,0.4); width:100%;}
+  100% {background-color:rgba(255,255,255,0.6); width: 30%;}
+}
+@-o-keyframes redimensionaBotaoCarrinho {
+  0%   {background-color:rgba(255,255,255,0.4); width:100%;}
+  100% {background-color:rgba(255,255,255,0.6); width: 30%;}
+}
+@-ms-keyframes redimensionaBotaoCarrinho {
+  0%   {background-color:rgba(255,255,255,0.4); width:100%;}
+  100% {background-color:rgba(255,255,255,0.6); width: 30%;}
+}
+.conteiner_carrinho{
+  width:100%;
+  height:5rem;
+  margin-top:0.5rem;
+  margin-bottom:0.25rem;
+  padding-top:1.2rem;
+  border-radius:0.4rem;
+  background-color:rgba(255,255,255,0.4);
+  color: #FFF;
+  font-size:2.4rem;
+  cursor: pointer;
+}
+.conteiner_carrinho:hover{
+  animation-name: redimensionaBotaoCarrinho;
+  webkit-animation-name: redimensionaBotaoCarrinho;
+  moz-animation-name: redimensionaBotaoCarrinho;
+  o-animation-name: redimensionaBotaoCarrinho;
+  ms-animation-name: redimensionaBotaoCarrinho;
+  animation-duration: 0.5s;
+  webkit-animation-duration: 0.5s;
+  moz-animation-duration: 0.5s;
+  o-animation-duration: 0.5s;
+  ms-animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  webkit-animation-iteration-count: 1;
+  moz-animation-iteration-count: 1;
+  o-animation-iteration-count: 1;
+  ms-animation-iteration-count: 1;
+  animation-fill-mode: both;
+  webkit-animation-fill-mode: both;
+  moz-animation-fill-mode: both;
+  o-animation-fill-mode: both;
+  ms-animation-fill-mode: both;
+}
+
+@keyframes puloDaCesta {
+  0%   {margin-top: -10rem; transform: scale(1,0.8);}
+  25%  {margin-top: 2rem; transform: scale(1.1,1);}
+  50%  {margin-top: -3rem; transform:scale(0.8,0.8);}
+  100% {margin-top: 0rem; transform:scale(1,1);}
+}
+@-webkit-keyframes puloDaCesta {
+  0%   {margin-top: -10rem; transform: scale(1,0.8);}
+  25%  {margin-top: 2rem; transform: scale(1.1,1);}
+  50%  {margin-top: -3rem; transform:scale(0.8,0.8);}
+  100% {margin-top: 0rem; transform:scale(1,1);}
+}
+@-moz-keyframes puloDaCesta {
+  0%   {margin-top: -10rem; transform: scale(1,0.8);}
+  25%  {margin-top: 2rem; transform: scale(1.1,1);}
+  50%  {margin-top: -3rem; transform:scale(0.8,0.8);}
+  100% {margin-top: 0rem; transform:scale(1,1);}
+}
+@-o-keyframes puloDaCesta {
+  0%   {margin-top: -10rem; transform: scale(1,0.8);}
+  25%  {margin-top: 2rem; transform: scale(1.1,1);}
+  50%  {margin-top: -3rem; transform:scale(0.8,0.8);}
+  100% {margin-top: 0rem; transform:scale(1,1);}
+}
+@-ms-keyframes puloDaCesta {
+  0%   {margin-top: -10rem; transform: scale(1,0.8);}
+  25%  {margin-top: 2rem; transform: scale(1.1,1);}
+  50%  {margin-top: -3rem; transform:scale(0.8,0.8);}
+  100% {margin-top: 0rem; transform:scale(1,1);}
+}
+
+@keyframes vibracaoDaCesta {
+  0%   {transform: rotate(0deg) margin-top: 0rem;}
+  12.5%  {transform: rotate(35deg); margin-top: -0.7rem;}
+  25%  {transform: rotate(0deg); margin-top: 0.2rem;}
+  50%  {transform: rotate(-15deg); margin-top: -0.3rem;}
+  62.5%  {transform: rotate(0deg); margin-top: 0.1rem;}
+  75%  {transform: rotate(5deg); margin-top: -0.2rem;}
+  100%   {transform: rotate(0deg); margin-top: 0rem;}
+}
+@-webkit-keyframes vibracaoDaCesta {
+  0%   {transform: rotate(0deg) margin-top: 0rem;}
+  12.5%  {transform: rotate(35deg); margin-top: -0.7rem;}
+  25%  {transform: rotate(0deg); margin-top: 0.2rem;}
+  50%  {transform: rotate(-15deg); margin-top: -0.3rem;}
+  62.5%  {transform: rotate(0deg); margin-top: 0.1rem;}
+  75%  {transform: rotate(5deg); margin-top: -0.2rem;}
+  100%   {transform: rotate(0deg); margin-top: 0rem;}
+}
+@-moz-keyframes vibracaoDaCesta {
+  0%   {transform: rotate(0deg) margin-top: 0rem;}
+  12.5%  {transform: rotate(35deg); margin-top: -0.7rem;}
+  25%  {transform: rotate(0deg); margin-top: 0.2rem;}
+  50%  {transform: rotate(-15deg); margin-top: -0.3rem;}
+  62.5%  {transform: rotate(0deg); margin-top: 0.1rem;}
+  75%  {transform: rotate(5deg); margin-top: -0.2rem;}
+  100%   {transform: rotate(0deg); margin-top: 0rem;}
+}
+@-o-keyframes vibracaoDaCesta {
+  0%   {transform: rotate(0deg) margin-top: 0rem;}
+  12.5%  {transform: rotate(35deg); margin-top: -0.7rem;}
+  25%  {transform: rotate(0deg); margin-top: 0.2rem;}
+  50%  {transform: rotate(-15deg); margin-top: -0.3rem;}
+  62.5%  {transform: rotate(0deg); margin-top: 0.1rem;}
+  75%  {transform: rotate(5deg); margin-top: -0.2rem;}
+  100%   {transform: rotate(0deg); margin-top: 0rem;}
+}
+@-ms-keyframes vibracaoDaCesta {
+  0%   {transform: rotate(0deg) margin-top: 0rem;}
+  12.5%  {transform: rotate(35deg); margin-top: -0.7rem;}
+  25%  {transform: rotate(0deg); margin-top: 0.2rem;}
+  50%  {transform: rotate(-15deg); margin-top: -0.3rem;}
+  62.5%  {transform: rotate(0deg); margin-top: 0.1rem;}
+  75%  {transform: rotate(5deg); margin-top: -0.2rem;}
+  100%   {transform: rotate(0deg); margin-top: 0rem;}
+}
+
+.cesta {
+  z-index: 1;
+  width: 3.5rem;
+  animation-name: puloDaCesta;
+  webkit-animation-name: puloDaCesta;
+  moz-animation-name: puloDaCesta;
+  o-animation-name: puloDaCesta;
+  ms-animation-name: puloDaCesta;
+  animation-duration: 0.9s;
+  webkit-animation-duration: 0.9s;
+  moz-animation-duration: 0.9s;
+  o-animation-duration: 0.9s;
+  ms-animation-duration: 0.9s;
+  animation-iteration-count: 1;
+  webkit-animation-iteration-count: 1;
+  moz-animation-iteration-count: 1;
+  o-animation-iteration-count: 1;
+  ms-animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  webkit-animation-fill-mode: forwards;
+  moz-animation-fill-mode: forwards;
+  o-animation-fill-mode: forwards;
+  ms-animation-fill-mode: forwards;
+}
+.cesta:hover{
+  animation-name: vibracaoDaCesta;
+  webkit-animation-name: vibracaoDaCesta;
+  moz-animation-name: vibracaoDaCesta;
+  o-animation-name: vibracaoDaCesta;
+  ms-animation-name: vibracaoDaCesta;
+  animation-delay: 0.2s;
+  webkit-animation-delay: 0.2s;
+  moz-animation-delay: 0.2s;
+  o-animation-delay: 0.2s;
+  ms-animation-delay: 0.2s;
+  animation-duration: 0.6s;
+  webkit-animation-duration: 0.6s;
+  moz-animation-duration: 0.6s;
+  o-animation-duration: 0.6s;
+  ms-animation-duration: 0.6s;
+  animation-iteration-count: 1;
+  webkit-animation-iteration-count: 1;
+  moz-animation-iteration-count: 1;
+  o-animation-iteration-count: 1;
+  ms-animation-iteration-count: 1;
+  animation-fill-mode:both;
+  webkit-animation-fill-mode:both;
+  moz-animation-fill-mode:both;
+  o-animation-fill-mode:both;
+  ms-animation-fill-mode:both;
+}
+.font_cesta, .font_cesta:hover, .font_cesta:link{
+  color:#FFF;
+}
+.fa-shopping-basket, .fa-angle-left, .fa-angle-right{
+  filter:drop-shadow(0.2rem 0.2rem 0.2rem #323232);
+}
+.conteiner_toast_padrao{
+  height:0.5rem;
+  vertical-align:bottom;
+  margin-top:-15rem;
+  display:inline-block;
+}
+.toast_padrao_card{
+  position:relative;
+  vertical-align: top;
+  border-radius:0.5rem;
+  background-color:#535353;
+  box-shadow: 0.1rem 0.5rem 1.6rem rgba(0,0,0,0.8);
+}
+.corpo_toast_padrao_card{
+  background-color:rgba(255,255,255,0.6);
+}
+.conteiner_descritivo{
+  color:#737373;
+  text-align:center;
+  margin-top:-9rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+.titulo_descritivo{
+  font-size:1.5rem;
+  font-weight: bolder;
+}
+.conteudo_descritivo{
+  font-size: 0.7rem;
+  margin-bottom: 2rem;
+}
+.logomarca_transparente{
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+/* ---------------------------------  CARROSSEL - FIM ----------------------------------- */
+/* ---------------------------  AJUSTES DE LAYOUT - INÍCIO ----------------------------- */
+/* LAYOUT SMALL MOBILE DEVICES */
+@media (min-width: 240px) {
+
+  .card_padrao{
+    width: 6.5rem;
+    height: 9rem;
+    padding: 0.15rem;
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
+  }
+  .titulo_card_carrossel{
+    border-radius: 0.25rem;
+    font-size: 0.6rem;
+    font-weight: bold;
+    margin-left: -1.2rem;
+    margin-right: -1.2rem;
+    margin-top: 6.45rem;
+    margin-bottom: 0.2rem;
+  }
+  .conteudo_card_carrossel{
+    display: none;
+  }
+  .seta_esquerda{
+     font-size:5rem;
+     margin-right:-16.3rem;"
+  }
+  .seta_direita{
+     font-size:5rem;
+     margin-left:-16.3rem;"
+  }
+  .titulo_modal{
+    font-size: 1.7rem;
+  }
+  .texto_modal{
+    font-size: 0.9rem;
+    margin-top: 13.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    margin-left:0.5rem;
+  }
+}
+/* LAYOUT MOBILE DEVICES */
+@media (min-width: 575px) {
+  .conteiner_interno_cards_de_cards{
+    height:105rem;
+  }
+  .card_padrao{
+    width: 8.5rem;
+    height: 11rem;
+    padding: 0.25rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+  .titulo_card_carrossel{
+    border-radius: 0.25rem;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-left: -1.3rem;
+    margin-right: -1.3rem;
+    margin-top: 7.9rem;
+    margin-bottom: 0.2rem;
+  }
+  .conteudo_card_carrossel{
+    display: none;
+  }
+  .seta_esquerda{
+     font-size:7.5rem;
+     margin-right:-15rem;"
+  }
+  .seta_direita{
+     font-size:7.5rem;
+     margin-left:-15rem;"
+  }
+  .titulo_modal{
+    font-size: 1.7rem;
+  }
+  .texto_modal{
+    font-size: 0.9rem;
+    margin-top: 18.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    margin-left:0.5rem;
+  }
+}
+/* LAYOUT TABLETS */
+@media (min-width: 767px) {
+  .card_padrao{
+    width: 11rem;
+    height: 12rem;
+    padding: 0.3rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+  }
+  .titulo_card_carrossel{
+    border-radius: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-left: -1.3rem;
+    margin-right: -1.3rem;
+    margin-top: 3.7rem;
+    margin-bottom: 0.2rem;
+  }
+  .conteudo_card_carrossel{
+    display: inline-block;
+    font-size: 0.7rem;
+    margin-bottom: 1.5rem;
+    margin-left: -1.3rem;
+    margin-right: -1.3rem;
+  }
+  .seta_esquerda{
+     font-size:9rem;
+     margin-right:-16rem;"
+  }
+  .seta_direita{
+     font-size:9rem;
+     margin-left:-16rem;"
+  }
+  .titulo_modal{
+    font-size: 1.7rem;
+  }
+  .texto_modal{
+    font-size: 0.9rem;
+    margin-top: 18.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    margin-left:0.5rem;
+  }
+}
+/* LAYOUT SMALL SCREENS */
+@media (min-width: 991px) {
+  .card_padrao{
+    width: 12rem;
+    height: 14rem;
+    padding: 0.6rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .titulo_card_carrossel{
+    border-radius: 0.4rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-left: -1.6rem;
+    margin-right: -1.6rem;
+    margin-top: 5.1rem;
+    margin-bottom: 0.2rem;
+  }
+  .conteudo_card_carrossel{
+    display: inline-block;
+    font-size: 0.7rem;
+    margin-bottom: 1.5rem;
+    margin-left: -1.6rem;
+    margin-right: -1.6rem;
+  }
+  .seta_esquerda{
+     font-size:10rem;
+     margin-right:-24rem;"
+  }
+  .seta_direita{
+     font-size:10rem;
+     margin-left:-24rem;"
+  }
+  .titulo_modal{
+    font-size: 1.7rem;
+  }
+  .texto_modal{
+    font-size: 0.9rem;
+    margin-top: 18.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    margin-left:0.5rem;
+  }
+}
+/* LAYOUT LARGE SCREENS */
+@media (min-width: 1199px) {
+  .card_padrao{
+    width: 14rem;
+    height: 17rem;
+    padding: 0.8rem;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+  }
+  .titulo_card_carrossel{
+    border-radius: 0.4rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: -1.8rem;
+    margin-right: -1.8rem;
+    margin-top: 6.3rem;
+    margin-bottom: 0.2rem;
+  }
+  .conteudo_card_carrossel{
+    display: inline-block;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    margin-left: -1.8rem;
+    margin-right: -1.8rem;
+  }
+  .seta_esquerda{
+     font-size:12rem;
+     margin-right:-28rem;"
+  }
+  .seta_direita{
+     font-size:12rem;
+     margin-left:-28rem;"
+  }
+  .titulo_modal{
+    font-size: 1.7rem;
+  }
+  .texto_modal{
+    font-size: 0.9rem;
+    margin-top: 18.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    margin-left:0.5rem;
+  }
+}
+/* LAYOUT EXTRA-LARGE SCREENS */
+@media (min-width: 1399px) {
+  .card_padrao{
+    width: 17rem;
+    height: 20rem;
+    padding: 1rem;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+  }
+  .titulo_card_carrossel{
+    border-radius: 0.4rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    margin-top: 10.2rem;
+    margin-bottom: 0.2rem;
+  }
+  .conteudo_card_carrossel{
+    display: inline-block;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+  .seta_esquerda{
+     font-size:14rem;
+     margin-right:-28rem;"
+  }
+  .seta_direita{
+     font-size:14rem;
+     margin-left:-28rem;"
+  }
+  .titulo_modal{
+    font-size: 1.9rem;
+  }
+  .texto_modal{
+    font-size: 1rem;
+    margin-top: 18.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    margin-left:0.5rem;
+  }
+}/* ---------------------------  AJUSTES DE LAYOUT - FIM ------------------------------- */
